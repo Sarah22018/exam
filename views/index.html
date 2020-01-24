@@ -14,7 +14,14 @@
     <meta charset="utf-8" />
 
     <title>Gamedev Canvas Workshop - lesson 10: finishing up</title>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
       * {
         padding: 0;
@@ -26,9 +33,22 @@
         margin: 0 auto;
       }
     </style>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script3.js" defer></script>
   </head>
 
   <body>
+    <!--<div class="container">
+      <div class="row">
+        <div class="col-sm-12">-->
+    <h3>
+      The Brick Game
+    </h3>
+    <!--</div>
+     </div>
+    </div>-->
+
     <canvas id="myCanvas" width="480" height="320"></canvas>
 
     <script>
@@ -148,7 +168,7 @@
 
         ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
 
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#E278F7";
 
         ctx.fill();
 
@@ -165,7 +185,7 @@
           paddleHeight
         );
 
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#490EED";
 
         ctx.fill();
 
@@ -188,7 +208,7 @@
 
               ctx.rect(brickX, brickY, brickWidth, brickHeight);
 
-              ctx.fillStyle = "#0095DD";
+              ctx.fillStyle = "#490EED";
 
               ctx.fill();
 
@@ -201,7 +221,7 @@
       function drawScore() {
         ctx.font = "16px Arial";
 
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#E278F7";
 
         ctx.fillText("Score: " + score, 8, 20);
       }
@@ -209,7 +229,7 @@
       function drawLives() {
         ctx.font = "16px Arial";
 
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#E278F7";
 
         ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
       }
@@ -274,5 +294,8 @@
 
       draw();
     </script>
+    <p>
+      Don't let the ball touch the ground or you lose a life.
+    </p>
   </body>
 </html>

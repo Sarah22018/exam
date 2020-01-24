@@ -10,9 +10,10 @@ body {
   margin: 2em;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+h3 {
+  
+  color: #490EED;
+ text-align: center;
 }
 
 .bold {
@@ -20,7 +21,9 @@ h1 {
 }
 
 p {
-  max-width: 600px;
+  text-align:left;
+  color: #E278F7;
+  font-size: 120%
 }
 
 form {
